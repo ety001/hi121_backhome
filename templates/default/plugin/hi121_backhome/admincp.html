@@ -1,0 +1,11 @@
+<div id="main_wp" class="mt10">
+<!--{if $_GET['pluginop']==''}--><p style="color: red; font-weight: bolder;">该插件进行的操作是危险的，请谨慎操作！</p>
+<p>请注意，当PHP模式发送且数据量非常大的时候，程序页面会出现一直等待的状态，这是正常的，请直接关闭窗口就可以了。</p><p>当前配置需要向&nbsp;<span style="color: red;font-weight: bolder">{$total}</span>&nbsp;位用户发送邮件，分&nbsp;<span style="color: red;font-weight: bolder">{$total_page}</span>&nbsp;次发送，预计至少耗时&nbsp;<span style="color: red;font-weight: bolder;">{$total_time}</span>&nbsp;分钟，请点击开始即可发送！</p><p style="color: red;font-weight: bolder;">（再次声明：正式使用前，请一定要阅读使用说明，一定要在正式发送邮件前使用测试模式测试一下，如果因为使用该插件导致不良后果，插件作者<a href="http://www.domyself.me" target="_blank">ETY001</a>将不承担任何责任。）</p>
+<p><a href="{$this->Config['site_url']}/admin.php?mod=plugin&code=manage&id={$pluginid}&identifier=hi121_backhome&pmod=admincp&pluginop=start" target="_blank">开始</a></p>
+<!--{/if}-->
+<!--{if $_GET['pluginop']=='start'}-->
+<div style="width:560px;padding:20px 5px;">
+	<!--{eval echo $output;}-->
+</div>
+<!--{/if}-->
+</div> 
